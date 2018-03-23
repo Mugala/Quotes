@@ -20,7 +20,18 @@
                
 
                 <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-                    <p> Enter your name or initials... :) </p>              
+                    <p> Enter the name of the person to whom the quote is credited... :) </p>              
+                </div>  
+
+            </div>
+            <div class="form-group">
+
+                <label for="submitted">Submitted by</label>
+                <input type="text" required class="form-control" id="submitted" [(ngModel)]="newQuote.submitted" name="name" required>
+               
+
+                <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                    <p> Enter the name of the person to whom the quote is credited... :) </p>              
                 </div>  
 
             </div>
